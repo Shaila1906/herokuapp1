@@ -17,11 +17,6 @@ export default class Page1 {
         return $('a[href="/abtest"]')
     }
 
-   /**  
-    get For () {
-        return $('a[href=""]')
-    }
-        */
     
     get ForAddRemove () {
         return $('a[href="/add_remove_elements/"]')
