@@ -1,23 +1,16 @@
-import { expect } from '@wdio/globals';
-import Page1 from '../pageobjects/page1.js';
-import AbTestPage from '../pageobjects/abtest.page1.js';
+import { expect } from '@wdio/globals'
+import ABTestPage from '../pageobjects/abtest.page.js'
+//import SecurePage from '../pageobjects/secure.page.js'
 
-describe('AB Testing Example', () => {
-    it('should verify the page title and header', async () => {
-        // Open the main page
-        await Page1.open();
+describe('A/B Test Page', () => {
+    it('should verify the heading and description', async () => {
+        // Navigate to the A/B Test page
+        await browser.url('https://the-internet.herokuapp.com/abtest');
 
-        // Navigate to the AB Testing page
-        await Page1.ForAbtest.click();
-        await AbTestPage.landOnPage();
+        // Verify the heading matches the expected text
+        await ABTestPage.verifyHeading('A/B Test Variation 1'); // Replace with the actual heading
 
-        // Verify the page title
-        const title = await browser.getTitle();
-        expect(title).toContain('A/B Testing');
-
-        // Verify the header
-        const header = await $('h3');
-        const headerText = await header.getText();
-        expect(headerText).toMatch(/A\/B Testing/);
+        // Verify the description contains specific text
+        await ABTestPage.verifyDescriptionContains('Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through).'); // Replace with actual text
     });
 });
