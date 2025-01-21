@@ -14,3 +14,5 @@ class AbTestPage extends Page1 {
 
 
 }
+
+export default AbTestPage;

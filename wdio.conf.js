@@ -24,6 +24,13 @@ export const config = {
         './test/specs/**/*.js'
     ],
     // Patterns to exclude.
+
+    suites: {
+        abtest: ['./test/specs/test.abtest.js']
+
+    },
+
+    
     exclude: [
         // 'path/to/excluded/files'
     ],
