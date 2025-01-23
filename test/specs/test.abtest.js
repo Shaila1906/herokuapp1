@@ -1,12 +1,12 @@
-import { expect } from '@wdio/globals'
+
 import ABTestPage from '../pageobjects/abtest.page.js'
-//import SecurePage from '../pageobjects/secure.page.js'
 
 describe('A/B Test Page', () => {
     it('should verify the heading and description', async () => {
-        // Navigate to the A/B Test page
-        await browser.url('https://the-internet.herokuapp.com/abtest');
 
+        // Navigate to the A/B Test page
+        await ABTestPage.open()
+        
         // Verify the heading matches the expected text
         await ABTestPage.verifyHeading('A/B Test Variation 1'); // Replace with the actual heading
 

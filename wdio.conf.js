@@ -26,7 +26,8 @@ export const config = {
     // Patterns to exclude.
 
     suites: {
-        abtest: ['./test/specs/test.abtest.js']
+        abtest: ['./test/specs/test.abtest.js'],
+        addDel: ['./test/specs/test.addDeltest.js']
 
     },
 
