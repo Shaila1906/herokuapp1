@@ -21,14 +21,14 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/*.js'
+        './tests/specs/**/*.js'
     ],
     // Patterns to exclude.
 
     suites: {
-        abtest: ['./test/specs/test.abtest.js'],
-        addDel: ['./test/specs/test.addDeltest.js'],
-        basicAuth: ['./test/specs/test.basicAuth.js']
+        abtest: ['./tests/specs/test.abtest.js'],
+        addDel: ['./tests/specs/test.addDeltest.js'],
+        basicAuth: ['./tests/specs/test.basicAuth.js']
 
     },
 

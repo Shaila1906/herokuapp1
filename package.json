@@ -13,7 +13,8 @@
     "wdio": "wdio run ./wdio.conf.js",
     "test_abtest" : "wdio wdio.conf.js --suite abtest",
     "test_addDel" : "wdio wdio.conf.js --suite addDel",
-    "test_basicAuth" : "wdio wdio.conf.js --suite basicAuth"
+    "test_basicAuth" : "wdio wdio.conf.js --suite basicAuth",
+    "test:basicAuth": "wdio wdio.conf.js --spec ./tests/specs/test.basicAuth.js"
 
   }
 }
