@@ -27,7 +27,8 @@ export const config = {
 
     suites: {
         abtest: ['./test/specs/test.abtest.js'],
-        addDel: ['./test/specs/test.addDeltest.js']
+        addDel: ['./test/specs/test.addDeltest.js'],
+        basicAuth: ['./test/specs/test.basicAuth.js']
 
     },
 
@@ -60,6 +61,11 @@ export const config = {
     capabilities: [{
         browserName: 'MicrosoftEdge'
     }],
+
+
+    imports: [
+        '@wdio/browser'
+    ],
 
     //
     // ===================

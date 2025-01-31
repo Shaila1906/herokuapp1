@@ -1,5 +1,5 @@
 
-import ABTestPage from '../pageobjects/abtest.page.js'
+import ABTestPage from '../../pages/abtest.page.js'
 
 describe('A/B Test Page', () => {
     it('should verify the heading and description', async () => {

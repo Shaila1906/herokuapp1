@@ -1,4 +1,4 @@
-import AddDelPage from '../pageobjects/addDel.page.js'
+import AddDelPage from '../../pages/addDel.page.js'
 
 describe('Add/Remove Elements Page', () => {
     beforeEach(async () => {
