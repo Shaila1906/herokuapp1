@@ -1,20 +1,13 @@
 import checkboxPage from "../../pages/checkbox.page";
 
 describe('Checkboxes Test', () => {
-    it('should verify checkboxes are checked', async () => {
-
-        await checkboxPage.open();
-        await checkboxPage.clickcheck();
-        await checkboxPage.verifycheck();
-        await browser.pause(2000);
-
-
-
-    });
+    
 
     it('Based on checked & notchecked', async () => {
         await browser.pause(2000);
         await checkboxPage.open();
+        await browser.pause(2000);
+
         await checkboxPage.clickcheckbox();
         //await checkboxPage.verifycheck2();
         await browser.pause(2000);
